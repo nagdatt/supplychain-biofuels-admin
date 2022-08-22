@@ -20,9 +20,15 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import { mainListItems, secondaryListItems } from './listItems';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import AddUser from './AddUser/AddUser'
+import AddResourcePerson from './AddResourcePerson/AddResourcePerson';
 //import Chart from './Chart';
 import Deposits from './Deposits';
 import Orders from './Orders';
+
+//goto 165 >
+//goto 165 >
+//goto 165 >
+//goto 165 >
 
 function Copyright(props) {
   return (
@@ -120,7 +126,7 @@ function DashboardContent() {
               noWrap
               sx={{ flexGrow: 1 }}
             >
-              Dashboard
+              Admin Panel
             </Typography>
             <IconButton color="inherit">
               <Badge badgeContent={4} color="secondary">
@@ -166,9 +172,9 @@ function DashboardContent() {
           <Routes>
         <Route exact path="/" element={<div>Home</div>}/>
         <Route exact path="/adduser" element={<AddUser/>}/>
+        <Route exact path="/addresourceperson" element={<AddResourcePerson/>}/>
 
         <Route exact path="/rawtransaction" element={<div>rawtransaction</div>}/>
-        <Route exact path="/resourceperson" element={<div>resourceperson</div>}/>
         <Route exact path="/warehouse" element={<div>warehouse</div>}/>
 
       </Routes>
